@@ -250,14 +250,14 @@ section .clearfix:after {
   margin-top: 10vh;
 }
 
-#story-each .sonia {
+#story-each .jaeyoung {
   float: left;
 }
 
-#story-each .michele {
+#story-each .soyoung {
   float: right;
 }
-#story-each .michele h3 {
+#story-each .soyoung h3 {
   text-align: right;
 }
 
@@ -321,10 +321,10 @@ section .clearfix:after {
   transition: right .25s ease-in-out, left .25s ease-in-out, transform .25s ease-in-out;
 }
 
-#playground .thumb.sonia { 
+#playground .thumb.jaeyoung { 
   left: 0;
 }
-#playground .thumb.michele { 
+#playground .thumb.soyoung { 
   right: 0;
 }
 
