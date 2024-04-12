@@ -1,0 +1,64 @@
+#scemotti {
+  padding: 5vh 100px;
+}
+
+#scemotti h4 {
+  color: var(--pink-color);
+  text-align: center;
+}
+
+#scemotti #image-map {
+  width: 95%;
+  margin: 50px auto;
+  display: block;
+}
+
+#scemotti p {
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin: 0;
+  text-align: center;
+}
+
+#scemotti .tel {
+  text-decoration: underline;
+  color: var(--pink-color);
+}
+
+#scemotti ul {
+  margin: 50px auto 0;
+  padding: 0;
+  width: 80%;
+
+  list-style: none;
+}
+
+#scemotti ul:after {
+  clear: both;
+  content: "";
+  display: block;
+  visibility: hidden;
+}
+
+#scemotti ul li {
+  float: center;
+  width: 100%;
+  padding: 0 2%;
+}
+
+
+#scemotti ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background: #204231;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
+#scemotti ul li a:hover {
+  background: #0c7c44;
+  border: 1px solid #4f4f4f;
+}
