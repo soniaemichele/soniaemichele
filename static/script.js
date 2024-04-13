@@ -1,4 +1,3 @@
-// 특정 DOM 의 절대 위치 정보를 조회한다.
 function getAbsolutePosition(elem) {
   var r = elem.getBoundingClientRect();
   return {
@@ -7,7 +6,6 @@ function getAbsolutePosition(elem) {
   }
 }
 
-// 특정 DOM 의 Top 을 조회한다.
 function getAbsoluteTop(elem) {
   return getAbsolutePosition(elem).top
 }
@@ -19,24 +17,22 @@ function getAbsoluteTop(elem) {
   var $storyEach = document.getElementById("story-each");
   var $storyTogether = document.getElementById("story-together");
 
-  var $jyThumb = document.getElementById("jaeyoung-thumb");
+  var $jyThumb = document.getElementById("sonia-thumb");
   var $jyIcon = $jyThumb.children[0];
-  var $jyContents = Array.from(document.getElementsByClassName("content jaeyoung"));
-  var $syThumb = document.getElementById("soyoung-thumb");
+  var $jyContents = Array.from(document.getElementsByClassName("content sonia"));
+  var $syThumb = document.getElementById("michele-thumb");
   var $syIcon = $syThumb.children[0];
-  var $syContents = Array.from(document.getElementsByClassName("content soyoung"));
+  var $syContents = Array.from(document.getElementsByClassName("content michele"));
   var $togetherContent = document.getElementsByClassName("content together")[0];
 
   var jyIconHolders = ['baby', 'girl', 'woman', 'couple'];
   var syIconHolders = ['baby', 'boy', 'man', 'couple'];
 
-  // 동적으로 Dom 의 사이즈가 변경될 수 도 있으니 (이미지 로딩 등),
-  // 그냥 매번 계산한다. 현대의 브라우져를 구동하는 단말기들은 생각보다 강력하다.
   function updatePlayground(e) {
-    // Playground Holder 의 위치를 정의
+    // Playground Holder
     var pgHolderPosition = getAbsolutePosition($pgHolder);
 
-    // Story 의 영역을 결정하는 위치가 story 영역 안쪽에 있을 때 Placeholder 노출을 결정
+    // Story
     var storyEachToken = "on-story-each";
     var storyAfterToken = "after-story-each";
     var storyEachDecider = window.innerHeight + window.scrollY;
